@@ -1,0 +1,31 @@
+{
+    "name": "jacopo/laravel-import-export",
+    "description": "A package to import and export data in csv for Laravel",
+    "version" : "0.1.0",
+    "keywords": ["import"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jacopo Beschi",
+            "email": "beschi.jacopo@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x",
+        "jacopo/bootstrap-3-table-generator": "dev-master"
+    },
+    "require-dev": {
+        "laravel/framework": "4.0.x",
+        "mockery/mockery": "dev-master"
+    },
+    "autoload": {
+        "classmap": [
+            "src/controllers"
+        ],
+        "psr-0": {
+            "Jacopo\\LaravelImportExport": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}

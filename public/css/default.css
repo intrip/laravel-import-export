@@ -1,0 +1,33 @@
+body 
+{
+	padding-top: 70px;
+}
+
+.fill-screen
+{
+	max-width: 100%;
+}
+
+/******* Bootstrap Icons **********/
+.icon-large{font-size:60px}
+.icon-medium{font-size:30px}
+.icon-small{font-size:20px}
+
+/********** Layouts ***********/
+.bottom-10{margin-bottom:10px}
+.top-10{margin-top:10px}
+
+/*********** Custom Bootstrap colors ***********/
+.jumbotron
+{
+	/*background-color: #5a5a5a;*/
+}
+
+/*********** Table ***********/
+table
+{
+    table-layout: fixed;
+    word-wrap: break-word;
+    font-size: 0.9em;
+}
+
