@@ -12,8 +12,10 @@ class ImportExportTemporaryTable extends Migration {
 	 */
 	public function up()
 	{
+		$connection_name = $this->getConnectionName();
 		$table_name = $this->getTableName();
-		Schema::create($table_name, function($table)
+
+		Schema::connection($connection_name)->create($table_name, function($table)
 		{
 			$table->increments('id');
 		});
@@ -27,14 +29,20 @@ class ImportExportTemporaryTable extends Migration {
 	 */
 	public function down()
 	{
+		$connection_name = $this->getConnectionName();
 		$table_name = $this->getTableName();
 
-		Schema::drop($table_name);
+		Schema::connection($connection_name)->drop($table_name);
 	}
 
 	private function getTableName()
 	{
 		return Config::get('LaravelImportExport::baseconf.table_prefix');
+	}
+
+	private function getConnectionName()
+	{
+		return Config::get('LaravelImportExport::baseconf.connection_name');
 	}
 
 }

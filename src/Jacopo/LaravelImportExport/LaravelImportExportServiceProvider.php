@@ -5,6 +5,7 @@ use Illuminate\Support\Facade\Session;
 use Illuminate\Support\Facades\Validator;
 use Jacopo\LaravelImportExport\Models\StateHandling\Import\StateHandler as ImportHandler;
 use Jacopo\LaravelImportExport\Models\StateHandling\Export\StateHandler as ExportHandler;
+use Jacopo\LaravelImportExport\Commmands\InstallCommand;
 
 class LaravelImportExportServiceProvider extends ServiceProvider {
 

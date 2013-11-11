@@ -1,9 +1,10 @@
 <?php
-// routes
+// get base route
+$base_route = Config::get('baseconf.base_application_route','importer');
 
 // Home controller
-Route::controller('importer','Jacopo\LaravelImportExport\HomeController');
+Route::controller($base_route,'Jacopo\LaravelImportExport\HomeController');
 // Import controller
-Route::controller('importer-import','Jacopo\LaravelImportExport\ImportController');
+Route::controller("{$base_route}-import",'Jacopo\LaravelImportExport\ImportController');
 // Export controller
-Route::controller('importer-export','Jacopo\LaravelImportExport\ExportController');
+Route::controller("{$base_route}-export",'Jacopo\LaravelImportExport\ExportController');

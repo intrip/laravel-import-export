@@ -6,4 +6,5 @@ return array(
 	"session_import_key" => "import_state",
 	"session_export_key" => "export_state",
 	"connection_name" => "import",
+	"base_application_route" => "importer",
 );
