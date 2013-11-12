@@ -50,8 +50,12 @@ class DatabaseSchemaManager
 	{
 		if( (! $safe_create) || ($safe_create && ! Schema::connection($this->connection)->hasTable('users')) )
 		{
-			Schema::connection($this->connection)->drop($name);
-
+			// dtop table if exists
+			if (Schema::connection($this->connection)->hasTable($name))
+			{
+				Schema::connection($this->connection)->drop($name);
+			}
+			
 			Schema::connection($this->connection)->create($name, function($table) use ($columns)
 			{
 				foreach($columns as $name => $type)

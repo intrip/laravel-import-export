@@ -138,7 +138,8 @@ class StateHandler
 		$key = $this->getLastKey();
 		if($key >= 0)
 		{
-			return $this->getStateArray()[$key];
+			$state_array = $this->getStateArray();
+			return $state_array[$key];
 		}
 		else
 		{
