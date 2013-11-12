@@ -27,10 +27,22 @@ DBMS that support transactions
 
 ##Installation with Composer
 
-To install Import-Export as a Composer package to be used with Laravel 4, simply add this to your composer.json in the require field:
+To install Import-Export as a Composer package to be used with Laravel 4, simply add this to your composer.json in the require field of your laravel app:
 
 ```json
 "jacopo/laravel-import-export": "dev-master"
 ```
+After you need to execute theese commands:
 
-metti screenshoot!!!!
+-Publish assets and configuration files
+```php
+php artisan config:publish jacopo/laravel-import-export
+php artisan asset:publish jacopo/laravel-import-export
+```
+Now you have under `app/config/packages/jacopo/laravel-import-export`
+
+```php
+php artisan migrate --package="jacopo/laravel-import-export" --database="import"
+```
+
+descrivi tutto e il discorso di url e configurazioni che puoi fare se vuoi e adda screenshoot

@@ -21,8 +21,7 @@
     },
     "autoload": {
         "classmap": [
-            "src/controllers",
-            "src/Commands"
+            "src/controllers"
         ],
         "psr-0": {
             "Jacopo\\LaravelImportExport": "src/"

@@ -15,7 +15,7 @@ class TemporaryModel extends Model {
 	protected $fillable = array('file_object','id');
 
 	public $timestamps = false;
-	
+
 	protected $connection;
 
 	// test model saving and getting

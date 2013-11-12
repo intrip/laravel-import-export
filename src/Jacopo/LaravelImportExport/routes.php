@@ -1,6 +1,6 @@
 <?php
 // get base route
-$base_route = Config::get('baseconf.base_application_route','importer');
+$base_route = Config::get('LaravelImportExport::baseconf.base_application_route','importer');
 
 // Home controller
 Route::controller($base_route,'Jacopo\LaravelImportExport\HomeController');
