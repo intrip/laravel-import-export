@@ -23,7 +23,7 @@ Import-Export is a package to import and export data from various format into a 
 
 ## Requirements
 
-- Php >= 5.3.7
+- PHP >= 5.3.7
 - Composer
 - Laravel framework 4.0.*
 - DBMS that support transactions and supported by Laravel ORM
