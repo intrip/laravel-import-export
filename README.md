@@ -5,6 +5,8 @@ Import-Export is a package to import and export data from various format into a 
 - **Author**: Jacopo Beschi
 - **Version**: 0.1.0
 
+[![Build Status](https://travis-ci.org/intrip/laravel-import-export.png)](https://travis-ci.org/intrip/laravel-import-export)
+
 <img src="https://raw.github.com/intrip/laravel-import-export/master/examples/import_step1.jpg" />
 
 ##Features
