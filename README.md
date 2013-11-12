@@ -50,11 +50,11 @@ After you need to execute the following commands:
 php artisan config:publish jacopo/laravel-import-export
 php artisan asset:publish jacopo/laravel-import-export
 ```
-Now you have under `app/config/packages/jacopo/laravel-import-export` the package configuration files. At this point you need to configure the database access. Open the file database.php and update it with the database access information. When done run the following command to initialize ImportExport database.
+Now you have under `app/config/packages/jacopo/laravel-import-export` the package configuration files. At this point you need to configure the database access. Open the file `app/config/packages/jacopo/laravel-import-export/database.php` and update it with the database access information. When done run the following command to initialize ImportExport database.
 
 ```php
 php artisan migrate --package="jacopo/laravel-import-export" --database="import"
 ```
-This command will create a _import_export_temporary_table in the db, you can change the name of the table editing the the key: `table_prefix` under the file `app/config/packages/jacopo/laravel-import-export/baseconf.php`.
+This command will create a `_import_export_temporary_table` in the db, you can change the name of the table editing the the key: `table_prefix` under the file `app/config/packages/jacopo/laravel-import-export/baseconf.php`.
 
 Congratulations! Now you can view the application at the url: `http://url-of-your-baseapp/importer`. If needed you can change the base route editing the the key: `base_application_route` under the file `app/config/packages/jacopo/laravel-import-export/baseconf.php`.
