@@ -212,7 +212,7 @@ STR;
 
 		if( $form_input['table_name'] && $form_input['max_rows'] )
 		{
-			$connection_name = Config::get('LaravelImportExport::baseconf.connection_name');
+			$connection_name = Config::get('laravel-import-export::baseconf.connection_name');
 			$temp_data = DB::connection($connection_name)
 				->table($this->form_input['table_name'])
 				->select("*")

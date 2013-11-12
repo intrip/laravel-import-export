@@ -23,7 +23,7 @@ class LaravelImportExportServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->package('Jacopo/LaravelImportExport');
+		$this->package('jacopo/laravel-import-export');
 
 		$this->registerImportState();
 		$this->registerExportState();
@@ -47,7 +47,7 @@ class LaravelImportExportServiceProvider extends ServiceProvider {
       // Use custom package database configuration
     	$this->app['config']['database.connections'] = array_merge(
 	      $this->app['config']['database.connections'],
-	      \Config::get('LaravelImportExport::database.connections')
+	      \Config::get('laravel-import-export::database.connections')
     	);
 	}
 

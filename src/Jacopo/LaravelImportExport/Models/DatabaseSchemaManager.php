@@ -20,7 +20,7 @@ class DatabaseSchemaManager
 
 	public function __construct()
 	{
-		$this->connection = Config::get('LaravelImportExport::baseconf.connection_name');
+		$this->connection = Config::get('laravel-import-export::baseconf.connection_name');
 		$this->manager = DB::connection($this->connection)->getDoctrineSchemaManager();
 	}
 

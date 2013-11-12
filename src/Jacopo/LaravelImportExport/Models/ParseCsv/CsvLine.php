@@ -13,7 +13,7 @@ class CsvLine extends RuntimeModel
 {
 	public function __construct()
 	{
-		$this->connection = Config::get('LaravelImportExport::baseconf.connection_name');
+		$this->connection = Config::get('laravel-import-export::baseconf.connection_name');
 		return parent::__construct( func_get_args() );
 	}
 

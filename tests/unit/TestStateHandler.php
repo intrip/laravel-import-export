@@ -176,7 +176,7 @@ class TestStateHandler extends PHPUnit_Framework_TestCase {
    	Illuminate\Support\Facades\Facade::setFacadeApplication($app);
    	Illuminate\Support\Facades\Config::swap($config = m::mock('ConfigMock'));
 
-   	$config->shouldReceive('get')->once()->with('LaravelImportExport::baseconf.table_prefix')->andReturn(true);
+   	$config->shouldReceive('get')->once()->with('laravel-import-export::baseconf.table_prefix')->andReturn(true);
 	}	
 
 	protected function mockConfigTableDb()
@@ -199,7 +199,7 @@ class TestStateHandler extends PHPUnit_Framework_TestCase {
    	Illuminate\Support\Facades\Facade::setFacadeApplication($app);
    	Illuminate\Support\Facades\Config::swap($config = m::mock('ConfigMock'));
 
-   	$config->shouldReceive('get')->once()->with('LaravelImportExport::baseconf.session_import_key','import_state')->andReturn($this->session_key);
+   	$config->shouldReceive('get')->once()->with('laravel-import-export::baseconf.session_import_key','import_state')->andReturn($this->session_key);
 	}
 
 }

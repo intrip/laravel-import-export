@@ -50,7 +50,7 @@ class DbFileBuilder
 	 */
 	protected function getAttributesFromDb()
 	{
-		$connection_name = Config::get('LaravelImportExport::baseconf.connection_name');
+		$connection_name = Config::get('laravel-import-export::baseconf.connection_name');
 		return DB::connection($connection_name)
 			->table($this->config["table"])
 			->select($this->createSelect() )

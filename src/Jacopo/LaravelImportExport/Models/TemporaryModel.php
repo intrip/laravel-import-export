@@ -21,8 +21,8 @@ class TemporaryModel extends Model {
 	// test model saving and getting
 	public function __construct()
 	{
-		$this->table = Config::get('LaravelImportExport::baseconf.table_prefix');
-		$this->connection = Config::get('LaravelImportExport::baseconf.connection_name');
+		$this->table = Config::get('laravel-import-export::baseconf.table_prefix');
+		$this->connection = Config::get('laravel-import-export::baseconf.connection_name');
 
 		$params = func_get_args();
 

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\View;
 
 class ExportController extends BaseController {
 
-	protected $layout = "LaravelImportExport::layouts.default";
+	protected $layout = "laravel-import-export::layouts.default";
 	protected $menu_index = 3;
 
 	public function getIndex()

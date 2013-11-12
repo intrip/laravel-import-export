@@ -17,7 +17,7 @@ class StateHandler extends StateHandlerBase
 
 	public function __construct()
 	{
-		$this->session_key = Config::get('LaravelImportExport::baseconf.session_export_key','export_state');
+		$this->session_key = Config::get('laravel-import-export::baseconf.session_export_key','export_state');
 	}
 
 }

@@ -31,7 +31,7 @@ class CsvFileHandler
 	public function getTemporary()
 	{
 		// disable query logging
-		$connection_name = Config::get('LaravelImportExport::baseconf.connection_name');
+		$connection_name = Config::get('laravel-import-export::baseconf.connection_name');
 		DB::connection($connection_name)->disableQueryLog();
 		$temporary = TemporaryModel::whereRaw("1")->orderBy("id","DESC")->first();
 		if($temporary)
@@ -56,7 +56,7 @@ class CsvFileHandler
 			$temporary_model = ($temporary_model) ? $temporary_model : new TemporaryModel();
 			$temporary_model->fill(array("file_object"=>$csv_file));
 			// disable query logging
-			$connection_name = Config::get('LaravelImportExport::baseconf.connection_name');
+			$connection_name = Config::get('laravel-import-export::baseconf.connection_name');
 			DB::connection($connection_name)->disableQueryLog();
 			return $temporary_model->save();
 		}
@@ -141,7 +141,7 @@ class CsvFileHandler
 		}
 
 		// disable query logging
-		$connection_name = Config::get('LaravelImportExport::baseconf.connection_name');
+		$connection_name = Config::get('laravel-import-export::baseconf.connection_name');
 		DB::connection($connection_name)->disableQueryLog();
 		// start transaction
 		DB::connection($connection_name)->transaction(function() use($csv_file)

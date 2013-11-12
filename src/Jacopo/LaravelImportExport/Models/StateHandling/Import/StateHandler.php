@@ -16,7 +16,7 @@ class StateHandler extends StateHandlerBase
 
 	public function __construct()
 	{
-		$this->session_key = Config::get('LaravelImportExport::baseconf.session_import_key','import_state');
+		$this->session_key = Config::get('laravel-import-export::baseconf.session_import_key','import_state');
 	}
 
 	/**
@@ -27,8 +27,8 @@ class StateHandler extends StateHandlerBase
 		parent::resetState();
 
 		// clean temporary db
-		$table_name = Config::get('LaravelImportExport::baseconf.table_prefix');
-		$connection_name = Config::get('LaravelImportExport::baseconf.connection_name');
+		$table_name = Config::get('laravel-import-export::baseconf.table_prefix');
+		$connection_name = Config::get('laravel-import-export::baseconf.connection_name');
 		DB::connection($connection_name)->table($table_name)->truncate();
 	}
 

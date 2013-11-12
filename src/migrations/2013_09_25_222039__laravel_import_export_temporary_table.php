@@ -34,12 +34,12 @@ class LaravelImportExportTemporaryTable extends Migration {
 
 	private function getTableName()
 	{
-		return Config::get('LaravelImportExport::baseconf.table_prefix');
+		return Config::get('laravel-import-export::baseconf.table_prefix');
 	}
 
 	private function getConnectionName()
 	{
-		return Config::get('LaravelImportExport::baseconf.connection_name');
+		return Config::get('laravel-import-export::baseconf.connection_name');
 	}
 
 }

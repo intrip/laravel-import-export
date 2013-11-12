@@ -8,7 +8,7 @@
     <meta name="description" content="Laravel import export">
     <meta name="author" content="Jacopo Beschi">
 
-    <title>{{(isset($title)) ? $title : Config::get('LaravelImportExport::baseconf.default_title')}}</title>
+    <title>{{(isset($title)) ? $title : Config::get('laravel-import-export::baseconf.default_title')}}</title>
 
     {{-- loading css --}}
     <link href="{{asset('packages/Jacopo/laravel-import-export/css/bootstrap.min.css')}}" media="all" type="text/css" rel="stylesheet">
