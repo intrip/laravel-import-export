@@ -30,11 +30,20 @@ Import-Export is a package to import and export data from various format into a 
 
 ##Installation with Composer
 
-To install Import-Export with Composer, simply add this to your composer.json in the require field of your laravel app:
+To install Import-Export with Composer, add this line to your composer.json file in the `require field:
 
 ```json
 "jacopo/laravel-import-export": "dev-master"
 ```
+
+Then open `app/config/app.php` and add the following line in the `providers` array:
+
+```php
+'providers' => array(
+    'Jacopo\LaravelImportExport\LaravelImportExportServiceProvider',
+)
+```
+
 After you need to execute the following commands:
 
 ```php
