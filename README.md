@@ -1,4 +1,4 @@
-#laravel-import-export
+#Laravel-Import-Export
 
 Import-Export is a package to import and export data from various format into a database.
 
