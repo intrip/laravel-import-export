@@ -50,6 +50,10 @@ After you need to execute the following commands:
 php artisan config:publish jacopo/laravel-import-export
 php artisan asset:publish jacopo/laravel-import-export
 ```
+
+Note: if you are using Laravel 4.1
+You must change `use Illuminate\Routing\Controllers\Controller;` to `use Illuminate\Routing\Controller;`. in controllers/BaseController.php
+
 Now you have under `app/config/packages/jacopo/laravel-import-export` the package configuration files. At this point you need to configure the database access. Open the file `app/config/packages/jacopo/laravel-import-export/database.php` and update it with the database access information. When done run the following command to initialize ImportExport database.
 
 ```php
