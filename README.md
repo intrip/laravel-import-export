@@ -35,6 +35,7 @@ To install Import-Export with Composer, add this line to your composer.json file
 ```json
 "jacopo/laravel-import-export": "dev-master"
 ```
+Also remember to set the minimum-stability to "dev" in your composer.json file
 
 Then open `app/config/app.php` and add the following line in the `providers` array:
 
