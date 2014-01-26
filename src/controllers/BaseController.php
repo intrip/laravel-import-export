@@ -1,6 +1,6 @@
 <?php namespace Jacopo\LaravelImportExport;
 
-use Illuminate\Routing\Controllers\Controller;
+use Controller;
 use Illuminate\Support\Facades\View;
 
 class BaseController extends Controller {
