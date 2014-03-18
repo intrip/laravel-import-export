@@ -11,8 +11,8 @@
     <title>{{(isset($title)) ? $title : Config::get('laravel-import-export::baseconf.default_title')}}</title>
 
     {{-- loading css --}}
-    <link href="{{asset('packages/Jacopo/laravel-import-export/css/bootstrap.min.css')}}" media="all" type="text/css" rel="stylesheet">
-    <link href="{{asset('packages/Jacopo/laravel-import-export/css/default.css')}}" media="all" type="text/css" rel="stylesheet">
+    <link href="{{asset('packages/jacopo/laravel-import-export/css/bootstrap.min.css')}}" media="all" type="text/css" rel="stylesheet">
+    <link href="{{asset('packages/jacopo/laravel-import-export/css/default.css')}}" media="all" type="text/css" rel="stylesheet">
 
   </head>
 
@@ -47,7 +47,7 @@
 
 
     {{-- loading javascript --}}
-    {{ HTML::script(asset('packages/Jacopo/laravel-import-export/js/jquery-1.10.2.min.js') ) }}
-    {{ HTML::script(asset('packages/Jacopo/laravel-import-export/js/bootstrap.js') ) }}
+    {{ HTML::script(asset('packages/jacopo/laravel-import-export/js/jquery-1.10.2.min.js') ) }}
+    {{ HTML::script(asset('packages/jacopo/laravel-import-export/js/bootstrap.js') ) }}
 
 </body></html>
