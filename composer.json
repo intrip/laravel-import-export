@@ -27,5 +27,5 @@
             "Jacopo\\LaravelImportExport": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }

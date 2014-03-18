@@ -13,11 +13,11 @@ class TestRuntimeModel extends PHPUnit_Framework_TestCase {
 
 	public function testValidConfig()
 	{
-		$config = array("softDelete" => true);
+		$config = array("timestamps" => true);
 
 		$this->model->setConfig($config);
 
-		$this->assertObjectHasAttribute("softDelete", $this->model);
+		$this->assertObjectHasAttribute("timestamps", $this->model);
 
 	}
 
