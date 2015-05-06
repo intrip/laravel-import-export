@@ -9,6 +9,8 @@ Import-Export is a package to import and export data from various format into a 
 
 <img src="https://raw.github.com/intrip/laravel-import-export/master/examples/import_step1.jpg" />
 
+## This package is no longer supported: either any bugfix or any new feature will be added. Install at your own risk!
+
 ##Features
 
 - Import and export data from Csv file into database
