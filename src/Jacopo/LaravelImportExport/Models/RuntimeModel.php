@@ -19,7 +19,7 @@ class RuntimeModel extends Model
 
 	protected $connection;
 
-	public function __construc()
+	public function __construct()
 	{
 		$args = func_get_args();
 		$this->connection = Config::get('laravel-import-export::baseconf.connection_name');
@@ -70,9 +70,9 @@ class RuntimeModel extends Model
 		return ( isset($this->table) && static::isAssoc($this->attributes) );
 	}
 
-	public static function isAssoc($array) {
-
-      return (bool)count(array_filter(array_keys($array), 'is_string'));
+	public static function isAssoc($array) 
+	{
+      		return (bool)count(array_filter(array_keys($array), 'is_string'));
 	}
 
 	public function getTableName()
